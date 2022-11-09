@@ -143,4 +143,8 @@ input {
         gap: 0;
         display: block;
     }
+    
+    .days {
+        width: 70%;
+    }
 }
