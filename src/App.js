@@ -30,6 +30,7 @@ const App = () => {
         <input onChange={(e) => setSearchLocation(e.target.value)} onKeyDown={handleKeyDown} type='text' placeholder='Enter a location...' value={searchLocation} />
       </div>
         <WeatherCard region={region} currentConditions={currentConditions} next_days={next_days} />
+        <footer className='footer'>&copy; Copyright 2022 Evan Moon</footer>
     </div>
   );
 }
