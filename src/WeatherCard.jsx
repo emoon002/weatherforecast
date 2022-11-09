@@ -8,7 +8,7 @@ const WeatherCard = ({region, currentConditions, next_days}) => {
     let {dayhour, temp, precip, humidity, wind, iconURL, comment} = currentConditions;
     display =
     <div className='container'>
-        <div className="current-conditions" id={comment}>
+        <div className="current-conditions">
           <h1>{region}</h1>
           <h2>Current Conditions</h2>
           <h4>{dayhour}</h4><img src={iconURL} alt={comment} width='110' height='110' />

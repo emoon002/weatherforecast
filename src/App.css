@@ -32,14 +32,13 @@ body {
 }
 
 input {
-    box-sizing: border-box;
     font-family: inherit;
     font-size: 24px;
     vertical-align: baseline;
     font-weight: 400;
     line-height: 1.29;
     letter-spacing: .16px;
-    border-radius: 0;
+    border-radius: 20px;
     outline: 2px solid transparent;
     outline-offset: -2px;
     width: 50%;
@@ -67,6 +66,7 @@ input {
 .message {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .current-conditions {
@@ -116,3 +116,30 @@ input {
     text-align: center;
     opacity: 0.5;
   }
+
+@media screen and (max-width: 600px) {
+    .title, .search, .message {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .current-conditions {
+        text-align: center;
+    }
+
+    .details {
+        gap: 0;
+        display: block;
+    }
+}

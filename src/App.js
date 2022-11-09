@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className='title'>Weather Forecast (7 Day)</h1>
+      <h1 className='title'>Weather Forecast</h1>
       <div className="search">
         <input onChange={(e) => setSearchLocation(e.target.value)} onKeyDown={handleKeyDown} type='text' placeholder='Enter a location...' value={searchLocation} />
       </div>
