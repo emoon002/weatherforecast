@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WeatherCard = ({region, currentConditions, next_days}) => {
+const WeatherCard = ({region, currentConditions, next_days, searchLocation}) => {
   
   let display;
 
@@ -36,6 +36,8 @@ const WeatherCard = ({region, currentConditions, next_days}) => {
           }
         </div>
     </div>
+  } else if (searchLocation === '') {
+    display = <div></div>
   } else {
     display = <div className='message'>No weather data found for your location! Check search paramaters and try again.</div>
   }
